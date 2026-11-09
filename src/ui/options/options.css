@@ -1,0 +1,34 @@
+/* src/ui/options/options.css */
+:root { --bg:#fff; --fg:#1a1a1a; --muted:#666; --line:#e2e2e2; --accent:#2b6cb0; --err:#c53030; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#16181d; --fg:#e8e8e8; --muted:#9aa0a6; --line:#2c2f36; --accent:#63a4ff; --err:#ff8a8a; }
+}
+* { box-sizing: border-box; }
+body { margin:0; padding:24px; max-width:860px; font:14px/1.5 system-ui,sans-serif;
+       background:var(--bg); color:var(--fg); }
+h1 { font-size:18px; margin:0 0 12px; }
+h2 { font-size:14px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted);
+     margin:24px 0 8px; }
+h3 { font-size:13px; margin:16px 0 6px; }
+.jfa-tabs { display:flex; gap:4px; border-bottom:1px solid var(--line); margin-bottom:16px; }
+.jfa-tabs button { background:none; border:0; padding:8px 12px; cursor:pointer;
+                   color:var(--muted); border-bottom:2px solid transparent; font:inherit; }
+.jfa-tabs button.active { color:var(--fg); border-bottom-color:var(--accent); }
+.jfa-field { display:block; margin-bottom:10px; }
+.jfa-label { display:block; font-size:12px; color:var(--muted); margin-bottom:3px; }
+input, textarea, select, pre {
+  width:100%; padding:7px 9px; border:1px solid var(--line); border-radius:6px;
+  background:var(--bg); color:var(--fg); font:inherit;
+}
+textarea { min-height:64px; resize:vertical; }
+#jsonEditor { min-height:460px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12px; }
+pre { overflow:auto; max-height:520px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12px; }
+button { padding:8px 14px; border:0; border-radius:6px; background:var(--accent); color:#fff;
+         cursor:pointer; font:inherit; }
+button.secondary { background:transparent; color:var(--accent); border:1px solid var(--line); }
+.jfa-actions { display:flex; gap:8px; align-items:center; margin-top:16px;
+               position:sticky; bottom:0; padding:12px 0; background:var(--bg); }
+.jfa-import { padding:8px 14px; border:1px solid var(--line); border-radius:6px; cursor:pointer; }
+.jfa-errors { color:var(--err); font-size:12px; padding-left:18px; }
+.jfa-hint { color:var(--muted); font-size:12px; }
+#status { min-height:20px; font-size:12px; color:var(--accent); }

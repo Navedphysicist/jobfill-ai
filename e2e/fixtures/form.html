@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><title>Apply - E2E</title></head>
+<body>
+<form id="app" onsubmit="return false">
+  <div><label for="fullName">Full name</label><input id="fullName" type="text"></div>
+  <div><label for="email">Email address</label><input id="email" type="text"></div>
+  <div><label for="phone">Phone number</label><input id="phone" type="text"></div>
+  <div class="wd-section">
+    <label>Country</label>
+    <button type="button" aria-haspopup="listbox" id="country">Select One</button>
+    <ul role="listbox" hidden>
+      <li role="option">India</li>
+      <li role="option">United States</li>
+      <li role="option">Germany</li>
+    </ul>
+  </div>
+  <div><label for="why">Why do you want this role?</label><textarea id="why" rows="4" cols="40"></textarea></div>
+</form>
+<script>
+  const btn = document.getElementById("country");
+  const list = document.querySelector("ul[role=listbox]");
+  btn.addEventListener("click", () => { list.hidden = !list.hidden; });
+  list.querySelectorAll("[role=option]").forEach((li) =>
+    li.addEventListener("click", () => { btn.textContent = li.textContent; list.hidden = true; }));
+</script>
+</body></html>

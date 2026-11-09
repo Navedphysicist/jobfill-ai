@@ -1,0 +1,10 @@
+node_modules/
+test-results/
+playwright-report/
+.DS_Store
+
+# Real profile data — never commit. Copy profile.example.json to profile.json.
+profile.json
+
+# Build output
+dist/

@@ -1,0 +1,29 @@
+.jfa-filled {
+  outline: 2px solid #eab308 !important;
+  outline-offset: 1px;
+}
+
+.jfa-generated {
+  outline: 2px solid #f97316 !important;
+  outline-offset: 1px;
+}
+
+.jfa-icon {
+  position: absolute;
+  z-index: 2147483647;
+  display: none;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid #d4d4d8;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.jfa-icon:hover {
+  background: #fef9c3;
+}

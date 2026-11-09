@@ -1,0 +1,24 @@
+/* src/ui/popup/popup.css — same variables as the options page */
+:root { --bg:#fff; --fg:#1a1a1a; --muted:#666; --line:#e2e2e2; --accent:#2b6cb0; --err:#c53030; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#16181d; --fg:#e8e8e8; --muted:#9aa0a6; --line:#2c2f36; --accent:#63a4ff; --err:#ff8a8a; }
+}
+* { box-sizing: border-box; }
+body { width: 320px; margin:0; padding:14px; font:13px/1.5 system-ui,sans-serif;
+       background:var(--bg); color:var(--fg); }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+a { color:var(--accent); font-size:12px; }
+.jfa-field { display:block; margin-bottom:8px; }
+.jfa-label { display:block; font-size:12px; color:var(--muted); margin-bottom:3px; }
+input, select { width:100%; padding:6px 8px; border:1px solid var(--line); border-radius:6px;
+                background:var(--bg); color:var(--fg); font:inherit; }
+button { padding:8px 12px; border:0; border-radius:6px; background:var(--accent); color:#fff;
+         cursor:pointer; font:inherit; }
+#fill, #logToggle { width:100%; margin-bottom:8px; }
+button.secondary { background:transparent; color:var(--accent); border:1px solid var(--line); }
+#result { min-height:18px; font-size:12px; margin-bottom:8px; }
+#result .jfa-errors { color:var(--err); margin:4px 0 0; padding-left:16px; }
+.jfa-actions { display:flex; gap:8px; margin:10px 0; }
+.warn { color: var(--err); font-size: 12px; }
+.warn button { margin:6px 6px 0 0; padding:5px 10px; }
+#openOptions { display:block; margin-top:8px; }

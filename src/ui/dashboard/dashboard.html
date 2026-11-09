@@ -1,0 +1,35 @@
+<!-- src/ui/dashboard/dashboard.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>JobFill AI — Applications</title>
+  <link rel="stylesheet" href="options.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header>
+    <h1>JobFill AI — Applications</h1>
+  </header>
+  <main>
+    <div id="status" role="status"></div>
+    <div id="summary" class="chips"></div>
+
+    <div id="filters" class="filters">
+      <select id="filterState" data-jobfill-ui="1" aria-label="State"></select>
+      <select id="filterRole" data-jobfill-ui="1" aria-label="Role"></select>
+      <input id="search" data-jobfill-ui="1" type="search" placeholder="Search company" />
+      <input id="from" data-jobfill-ui="1" type="date" aria-label="From" />
+      <input id="to" data-jobfill-ui="1" type="date" aria-label="To" />
+      <button id="exportCsv" data-jobfill-ui="1" class="secondary">Export CSV</button>
+      <button id="exportJson" data-jobfill-ui="1" class="secondary">Export JSON</button>
+      <button id="exportAllCsv" data-jobfill-ui="1" class="secondary">Export all (CSV)</button>
+    </div>
+
+    <div id="tableRoot"></div>
+
+    <section id="usage"></section>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>

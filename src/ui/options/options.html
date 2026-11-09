@@ -1,0 +1,70 @@
+<!-- src/ui/options/options.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>JobFill AI — Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <header>
+    <h1>JobFill AI</h1>
+    <nav class="jfa-tabs">
+      <button data-tab="settings" class="active">Settings</button>
+      <button data-tab="form">Profile</button>
+      <button data-tab="json">JSON</button>
+      <button data-tab="preview">Preview</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="status" role="status"></div>
+
+    <section id="tab-settings" class="jfa-tab">
+      <label class="jfa-field"><span class="jfa-label">OpenAI API key</span>
+        <input id="apiKey" data-jobfill-ui="1" type="password" autocomplete="off" /></label>
+      <label class="jfa-field"><span class="jfa-label">Fast model (field mapping)</span>
+        <input id="fastModel" data-jobfill-ui="1" type="text" /></label>
+      <label class="jfa-field"><span class="jfa-label">Quality model (generated answers)</span>
+        <input id="qualityModel" data-jobfill-ui="1" type="text" /></label>
+      <label class="jfa-field"><span class="jfa-label">Base URL</span>
+        <input id="baseUrl" data-jobfill-ui="1" type="text" /></label>
+      <label class="jfa-field"><span class="jfa-label">Model prices (INR per 1M tokens, JSON)</span>
+        <textarea id="rates" data-jobfill-ui="1" spellcheck="false" rows="8"></textarea></label>
+      <p class="jfa-hint">Published prices change. Edit freely; used only for the spend estimate.</p>
+      <button id="saveSettings">Save settings</button>
+      <button id="clearCache" class="secondary">Clear answer cache</button>
+    </section>
+
+    <section id="tab-form" class="jfa-tab" hidden>
+      <ul id="formErrors" class="jfa-errors"></ul>
+      <div id="formRoot"></div>
+      <div class="jfa-actions">
+        <button id="saveForm">Save profile</button>
+        <button id="resetProfile" class="secondary">Reset to bundled file</button>
+      </div>
+    </section>
+
+    <section id="tab-json" class="jfa-tab" hidden>
+      <textarea id="jsonEditor" data-jobfill-ui="1" spellcheck="false"></textarea>
+      <ul id="jsonErrors" class="jfa-errors"></ul>
+      <div class="jfa-actions">
+        <button id="saveJson">Save JSON</button>
+        <button id="exportJson" class="secondary">Export profile.json</button>
+        <label class="secondary jfa-import">Import…
+          <input id="importJson" type="file" accept="application/json" hidden />
+        </label>
+      </div>
+    </section>
+
+    <section id="tab-preview" class="jfa-tab" hidden>
+      <label class="jfa-field"><span class="jfa-label">Role</span>
+        <select id="previewRole" data-jobfill-ui="1"></select></label>
+      <p class="jfa-hint">This is exactly what the model receives. Nothing else is sent.</p>
+      <pre id="previewOut"></pre>
+    </section>
+  </main>
+
+  <script src="options.js"></script>
+</body>
+</html>

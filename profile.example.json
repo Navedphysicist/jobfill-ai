@@ -1,0 +1,170 @@
+{
+  "_meta": {
+    "version": 2,
+    "updatedAt": "2026-10-12"
+  },
+  "personal": {
+    "fullName": "Jane Doe",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "you@example.com",
+    "phone": "+91 90000 00000",
+    "dateOfBirth": "1990-01-01",
+    "gender": "Prefer not to say",
+    "pronouns": "They/Them",
+    "addressLine": "123 Example Street, Example Area",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "pincode": "560001"
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/your-handle/",
+    "github": "https://github.com/your-handle",
+    "portfolio": ""
+  },
+  "education": [
+    {
+      "degree": "B.Tech / B.E. in Mechanical Engineering",
+      "school": "Shri Siddhi Vinayak Institute of Technology (AKTU)",
+      "location": "Bareilly, India",
+      "from": "2016",
+      "to": "2020",
+      "gpa": "8.6 / 10"
+    },
+    {
+      "degree": "Full Stack Web Development (bootcamp)",
+      "school": "Masai School",
+      "location": "Bengaluru, India",
+      "from": "2021-12",
+      "to": "2022-08",
+      "gpa": ""
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Generative AI Engineer",
+      "company": "Axelerant (Progression School, an Axelerant venture)",
+      "location": "Gurgaon, India (Remote)",
+      "from": "2024-05",
+      "to": "Present",
+      "current": true,
+      "bullets": [
+        "Lead engineer on Talent Studios (determinedpeople.ai), an AI-powered executive talent-sourcing platform — owning features end-to-end across 85+ REST APIs with Next.js, React 19, Node.js, TypeScript and PostgreSQL.",
+        "Engineered the candidate-matching engine: LLM attribute extraction, embeddings and vector similarity search, and a two-level scoring model producing explainable ranked recommendations.",
+        "Built an app-wide AI assistant that runs full candidate searches from chat via LLM tool calling, with a capability tool library and admin-approved ranking rules.",
+        "Designed a multi-provider AI model layer (OpenAI, Anthropic, Groq) with a per-task model catalog, registry and resolver, plus per-route usage and cost observability.",
+        "Shipped an AI interview workflow: meeting bots capture live transcripts for LLM-driven interview analysis, integrated with Calendly, Clockwork ATS and Resend.",
+        "Deployed LangChain and LangGraph agents with custom tools, including a real-time web search assistant.",
+        "Designs and delivers Generative AI training for internal teams, clients and university cohorts — RAG, agents, LangChain/LangGraph, Python and FastAPI."
+      ]
+    },
+    {
+      "title": "SDE-I",
+      "company": "Masai School",
+      "location": "Bengaluru, India",
+      "from": "2022-08",
+      "to": "2024-04",
+      "current": false,
+      "bullets": [
+        "Core engineer on Masai's Learning Management System, used daily for live classes and student tracking.",
+        "Implemented attendance tracking using Zoom APIs (TypeScript, Node.js), improving accuracy by 45%.",
+        "Built Aadhaar-based identity verification and role-based authentication (OAuth 2.0, email and mobile OTP).",
+        "Automated data synchronisation with off-peak cron jobs; Winston and CloudWatch logging on AWS.",
+        "Built REST APIs with Node.js and Express; modelled cross-entity data relations with MySQL and GraphQL.",
+        "Taught data structures and algorithms and JavaScript to 5,000+ students across 800+ live sessions, and authored curriculum, session plans and interview question banks."
+      ]
+    }
+  ],
+  "skills": [
+    "Generative AI",
+    "Large Language Models (LLMs)",
+    "RAG",
+    "Agentic AI",
+    "LangChain",
+    "LangGraph",
+    "MCP",
+    "Prompt Engineering",
+    "Vector Databases",
+    "Embeddings",
+    "Semantic Search",
+    "LLM Evaluation",
+    "Python",
+    "FastAPI",
+    "TypeScript",
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "Next.js",
+    "React.js",
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "GraphQL",
+    "AWS",
+    "Docker",
+    "REST APIs",
+    "Curriculum Design",
+    "Technical Training"
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Full professional proficiency"
+    },
+    {
+      "language": "Hindi",
+      "proficiency": "Native"
+    }
+  ],
+  "workAuthorization": {
+    "citizenOf": "India",
+    "authorizedToWorkIn": [
+      "India"
+    ],
+    "requiresSponsorshipOutsideIndia": true,
+    "note": "Indian citizen. Work-authorized in India ONLY — no permits or visas for any other country. For a job located in India: legally eligible = Yes, requires sponsorship = No. For a job outside India: will require sponsorship = Yes."
+  },
+  "jobPreferences": {
+    "noticePeriod": "1 month",
+    "currentSalary": "INR 00,00,000",
+    "expectedSalary": "INR 00 LPA",
+    "employmentType": "Full-time",
+    "workMode": "Remote preferred; open to hybrid or onsite anywhere in India",
+    "willingToRelocate": true,
+    "totalExperienceYears": 4
+  },
+  "diversity": {
+    "disability": "Prefer not to say",
+    "veteran": "Prefer not to say",
+    "ethnicity": "Prefer not to say",
+    "casteCategory": "Prefer not to say"
+  },
+  "truthRules": [
+    "NEVER claim work permits, visas, or work authorization outside India.",
+    "NEVER claim Azure experience — cloud experience is AWS only.",
+    "NEVER claim LLM fine-tuning experience.",
+    "NEVER mention an AI Invoice Parser project.",
+    "NEVER claim machine learning, data science, or data engineering experience — no model training, no MLOps, no data pipelines. LLM application work only.",
+    "B.Tech CGPA is 8.6, never 9.2.",
+    "Total professional experience is 4 years (career started August 2022).",
+    "Agentic frameworks used in production: LangChain, LangGraph, MCP, Vercel AI SDK. CrewAI: taught hands-on in college workshops (claimable as teaching/workshop experience, not production). Never claim AutoGen."
+  ],
+  "roles": {
+    "genai": {
+      "label": "GenAI Engineer",
+      "headline": "Senior Generative AI Engineer | RAG · Agents · LLM Evals · LangGraph",
+      "emphasis": "Lead engineer on production LLM systems: RAG pipelines, agent architectures, tool calling, embeddings and vector search, LLM evaluation, and per-route cost observability."
+    },
+    "swe": {
+      "label": "Software Engineer",
+      "headline": "Senior Software Engineer | Node.js · TypeScript · Python · PostgreSQL",
+      "emphasis": "Full-stack delivery: 85+ REST APIs end to end, LMS core systems, OAuth and OTP authentication, third-party integrations, cron automation, and AWS logging and monitoring."
+    },
+    "trainer": {
+      "label": "Trainer / L&D",
+      "headline": "Technical Trainer | Generative AI · Python · DSA | 5,000+ engineers trained",
+      "emphasis": "Curriculum design and live delivery across GenAI, Python, FastAPI, JavaScript and DSA — 800+ sessions, 5,000+ learners — while building the same production systems being taught."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><title>Apply</title></head>
+<body>
+<form id="main">
+  <div><label for="email">Email address</label><input id="email" type="email"></div>
+  <div><input id="phone" type="tel" aria-label="Phone number"></div>
+  <div><label for="why">Why do you want this role?</label><textarea id="why"></textarea></div>
+  <div><label for="country">Country</label>
+    <select id="country"><option value="">Select</option><option>India</option><option>Germany</option></select></div>
+  <div><input id="agree" type="checkbox"><label for="agree">I agree</label></div>
+  <fieldset>
+    <legend>Do you require sponsorship?</legend>
+    <input id="sp-yes" type="radio" name="sponsorship" value="yes"><label for="sp-yes">Yes</label>
+    <input id="sp-no" type="radio" name="sponsorship" value="no"><label for="sp-no">No</label>
+  </fieldset>
+  <input type="hidden" name="csrf" value="x">
+  <div><label for="pw">Secret</label><input id="pw" type="password"></div>
+  <div><label for="cv">Resume file</label><input id="cv" type="file"></div>
+  <div><label for="dis">Disabled field</label><input id="dis" type="text" disabled></div>
+  <div><input id="linkedin" type="text" placeholder="LinkedIn URL"></div>
+  <div><input data-testid="bare"></div>
+</form>
+</body></html>

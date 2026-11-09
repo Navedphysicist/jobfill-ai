@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "JobFill AI",
+  "version": "2.1.0",
+  "description": "Autofills job application forms from your profile.json using AI, with per-field regeneration and an application tracker. Never submits \u2014 you review.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "JobFill AI"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "exclude_matches": [
+        "https://*.linkedin.com/*",
+        "https://linkedin.com/*"
+      ]
+    }
+  ]
+}

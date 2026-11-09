@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8" /><link rel="stylesheet" href="popup.css" /></head>
+<body>
+  <header>
+    <strong>JobFill AI</strong>
+    <a id="openDashboard" href="#" data-jobfill-ui="1">Dashboard</a>
+  </header>
+
+  <label class="jfa-field"><span class="jfa-label">Fill as</span>
+    <select id="role" data-jobfill-ui="1"></select></label>
+
+  <button id="fill" data-jobfill-ui="1">Fill this form</button>
+  <div id="result" role="status"></div>
+
+  <button id="logToggle" class="secondary" data-jobfill-ui="1">Log this application</button>
+  <form id="logForm" hidden>
+    <div id="logHint" class="warn" hidden></div>
+    <div id="logFields"></div>
+    <div id="logStatus" class="warn"></div>
+    <div id="dupWarning" class="warn" hidden></div>
+    <div class="jfa-actions">
+      <button id="logSave" type="submit" data-jobfill-ui="1">Save</button>
+      <button id="logCancel" type="button" class="secondary" data-jobfill-ui="1">Cancel</button>
+    </div>
+  </form>
+
+  <a id="openOptions" href="#" data-jobfill-ui="1">Settings</a>
+  <script src="popup.js"></script>
+</body>
+</html>
